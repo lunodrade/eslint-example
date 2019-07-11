@@ -1,0 +1,27 @@
+{
+  "name": "eslint-example",
+  "version": "0.0.1",
+  "description": "Exemplo de configuração de projeto usando eslint-prettier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunodrade/eslint-example.git"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "author": "Luciano Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lunodrade/eslint-example/issues"
+  },
+  "homepage": "https://github.com/lunodrade/eslint-example#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.11.2",
+    "prettier": "^1.18.2"
+  }
+}
