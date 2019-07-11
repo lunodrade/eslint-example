@@ -1,0 +1,47 @@
+{
+  "diffEditor.ignoreTrimWhitespace": true,
+  "files.eol": "\n",
+  "npm.enableScriptExplorer": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.multiCursorModifier": "alt",
+  "material-icon-theme.folders.theme": "classic",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "/K",
+    "%APPDATA%\\Code\\User\\git\\vsterminal.cmd"
+  ],
+  "search.exclude": {
+    ".git": true,
+    ".eslintcache": true,
+    "app/dist": true,
+    "app/main.prod.js": true,
+    "app/main.prod.js.map": true,
+    "dll": true,
+    "release": true,
+    "node_modules": true,
+    "npm-debug.log.*": true,
+    "test/**/__snapshots__": true,
+    "yarn.lock": true,
+    ".tmp": true
+  },
+
+  //Javascript
+  "editor.formatOnSave": false,
+  "files.insertFinalNewline": true,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "phpcs.standard": "PSR2",
+  "phpcs.executablePath": ".\\vendor\\bin\\phpcs",
+
+  "runOnSave.commands": [
+    {
+      "match": ".*\\.*$",
+      "notMatch": "[\\\\\\/]_[^\\\\\\/]*\\.scss$",
+      "command": "cd ${workspaceFolder} && npm run prettier -- ${file} --write",
+      "runIn": "backend",
+      "runningStatusMessage": "Padronizando ${fileBasename}",
+      "finishStatusMessage": "${fileBasename} padronizado!"
+    }
+  ]
+}
