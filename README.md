@@ -7,7 +7,7 @@ O objetivo é forçar e ao mesmo tempo ajudar o desenvolvedor a seguir padrões 
 Para PHP: [PSR-2](https://www.php-fig.org/psr/psr-2/)
 Para Javascript [Google Standard](https://google.github.io/styleguide/javascriptguide.xml)
 
-## Configuração base
+## Configuração base (uma vez por PC)
 
 * Utilize o [Visual Code](https://code.visualstudio.com/download)
 * Dentro do Visual Code, instale as seguintes extensões:
@@ -39,7 +39,8 @@ Para Javascript [Google Standard](https://google.github.io/styleguide/javascript
 ```
 * Pronto! Agora durante a edição do arquivo serão mostrado os erros que estiverem fora do padrão daquela linguagem. E ao salvar o arquivo, o próprio Visual Code tentará corrigir tudo que for possível, seguindo o padrão.
 
-**PS:**
+## Configuração extendida (uma vez por projeto)
+
 Para cada novo projeto criado, e somente uma vez dentro dele, é necessário instalar o Eslint local e iniciar a configuração dele (que cria o arquivo `.eslintrc.json` no root do projeto). Para isso, basta executar dentro do root da pasta do projeto:
 ```
 $ npm install --save-dev eslint
