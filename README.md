@@ -59,3 +59,18 @@ Ao digitar essa segunda linha, no terminal irá aparecendo várias opções. Bas
 ? Would you like to install them now with npm? (Y/n)
 → RESPONDA COM Y
 ```
+
+Após o processo acima crie um arquivo no root do projeto com o nome `.prettierrc` e o seguinte conteúdo. Esse arquivo trata as regras de quando o arquivo é salvo.
+```
+{
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": "*.php",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}
+```
