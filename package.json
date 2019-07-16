@@ -4,8 +4,8 @@
   "description": "Exemplo de configuração de projeto usando eslint-prettier",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier"
+    "test": "echo \"Error: nenhum teste especificado\" && exit 1",
+    "eslint": ".\\node_modules\\.bin\\eslint --init"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
   "homepage": "https://github.com/lunodrade/eslint-example#readme",
   "devDependencies": {
     "@prettier/plugin-php": "^0.11.2",
+    "eslint": "^6.0.1",
+    "eslint-config-google": "^0.13.0",
     "prettier": "^1.18.2"
-  }
+  },
+  "dependencies": {}
 }

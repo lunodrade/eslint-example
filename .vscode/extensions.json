@@ -1,3 +1,7 @@
 {
-  "recommendations": ["ikappas.phpcs", "pucelle.run-on-save"]
+  "recommendations": [
+    "ikappas.phpcs",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
 }
