@@ -4,8 +4,8 @@ Exemplo de configuração de projeto usando eslint-prettier
  
 O objetivo é forçar e ao mesmo tempo ajudar o desenvolvedor a seguir padrões de códigos.
  
-Para PHP: [PSR-2](https://www.php-fig.org/psr/psr-2/)
-Para Javascript [Google Standard](https://google.github.io/styleguide/javascriptguide.xml)
+* Para PHP: [PSR-2](https://www.php-fig.org/psr/psr-2/)
+* Para Javascript [Google Standard](https://google.github.io/styleguide/javascriptguide.xml)
 
 ## Configuração base (uma vez por PC)
 
