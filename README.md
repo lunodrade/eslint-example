@@ -39,7 +39,7 @@ Para Javascript [Google Standard](https://google.github.io/styleguide/javascript
 ```
 * Pronto! Agora durante a edição do arquivo serão mostrado os erros que estiverem fora do padrão daquela linguagem. E ao salvar o arquivo, o próprio Visual Code tentará corrigir tudo que for possível, seguindo o padrão.
 
-## Configuração extendida (uma vez por projeto)
+## Configuração final (uma vez por projeto)
 
 Para cada novo projeto criado, e somente uma vez dentro dele, é necessário instalar o Eslint local e iniciar a configuração dele (que cria o arquivo `.eslintrc.json` no root do projeto). Para isso, basta executar dentro do root da pasta do projeto:
 ```
