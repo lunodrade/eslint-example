@@ -1,20 +1,6 @@
 {
   "diffEditor.ignoreTrimWhitespace": true,
   "files.eol": "\n",
-  "npm.enableScriptExplorer": true,
-  "sync.gist": "2f5fe6b460c213caed28037ec4b35ac2",
-  "sync.autoUpload": true,
-  "sync.autoDownload": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "none",
-  "editor.multiCursorModifier": "alt",
-  "material-icon-theme.folders.theme": "classic",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-  "terminal.integrated.shellArgs.windows": [
-    "/K",
-    "%APPDATA%\\Code\\User\\git\\vsterminal.cmd"
-  ],
   "search.exclude": {
     ".git": true,
     ".eslintcache": true,
@@ -38,40 +24,17 @@
     "**/node_modules/**": true,
     "**/vendor/**": true
   },
-  //Javascript
-  /*
-    "runOnSave.commands": [
-      {
-        "match": ".*\\.*$",
-        "notMatch": "[\\\\\\/]_[^\\\\\\/]*\\.scss$",
-        "command": "cd ${workspaceFolder} && npm run prettier -- ${file} --write",
-        "runIn": "backend",
-        "runningStatusMessage": "Padronizando ${fileBasename}",
-        "finishStatusMessage": "${fileBasename} padronizado!"
-      }
-    ],
-    "editor.detectIndentation": false,
-    "editor.tabSize": 4
-    */
-
   "files.insertFinalNewline": true,
   "phpcs.standard": "PSR2",
   "phpcs.executablePath": ".\\vendor\\bin\\phpcs",
-
   "eslint.alwaysShowStatus": true,
   "eslint.provideLintTask": true,
-
-  // Set the default
   "editor.formatOnSave": true,
   "files.associations": {
     ".blade": "html",
-    "blade": "html",
-    ".blade.php": "html",
-    ".php": "php",
-    ".tpl": "html"
+    "blade": "html"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.autoFixOnSave": true,
-
   "prettier.singleQuote": true
 }
