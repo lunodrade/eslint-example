@@ -19,12 +19,16 @@ O objetivo é forçar e ao mesmo tempo ajudar o desenvolvedor a seguir padrões 
 	* Linux: `$HOME/.vscode/extensions`
 * E execute o seguinte código (na diretório mostrado acima):
 	* `npm install @prettier/plugin-php`
+* Instale o executável do PHP Code Sniffer de modo global (por usuário)
+	* `composer global require squizlabs/php_codesniffer`
+* Instale o executável do Eslint (Javascript) de modo global (por usuário)
+	* `npm install --save-dev eslint`
 * Após isso vá nos Settings do Visual Code e insira as seguintes linhas:
 ```json
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "phpcs.standard": "PSR2",
-  "phpcs.executablePath": ".\\vendor\\bin\\phpcs",
+  "phpcs.executablePath": "%APPDATA%\\Composer\\vendor\\bin\\phpcs",
   "editor.formatOnSave": true,
   "files.associations": {
     "blade": "html",
@@ -35,7 +39,13 @@ O objetivo é forçar e ao mesmo tempo ajudar o desenvolvedor a seguir padrões 
   "eslint.alwaysShowStatus": true,
   "eslint.provideLintTask": true,
 
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "prettier.endOfLine": "lf",
+
+  "editor.tabSize": 2,
+  "[php]": {
+    "editor.tabSize": 4
+  }
 ```
 * Pronto! Agora durante a edição do arquivo serão mostrado os erros que estiverem fora do padrão daquela linguagem. E ao salvar o arquivo, o próprio Visual Code tentará corrigir tudo que for possível, seguindo o padrão.
 
@@ -43,8 +53,7 @@ O objetivo é forçar e ao mesmo tempo ajudar o desenvolvedor a seguir padrões 
 
 Para cada novo projeto criado, e somente uma vez dentro dele, é necessário instalar o Eslint local e iniciar a configuração dele (que cria o arquivo `.eslintrc.json` no root do projeto). Para isso, basta executar dentro do root da pasta do projeto:
 ```
-$ npm install --save-dev eslint
-$ .\\node_modules\\.bin\\eslint --init
+$ eslint --init
 ```
 Ao digitar essa segunda linha, no terminal irá aparecendo várias opções. Basicamente selecione as seguintes:
 ```
