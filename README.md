@@ -24,11 +24,12 @@ O objetivo é forçar e ao mesmo tempo ajudar o desenvolvedor a seguir padrões 
 * Instale o executável do Eslint (Javascript) de modo global (por usuário)
 	* `npm install --save-dev eslint`
 * Após isso vá nos Settings do Visual Code e insira as seguintes linhas:
+	* obs: a linha `"phpcs.executablePath"` precisa estar com caminho do seu pc, conseguido atráves de `%APPDATA%\\Composer`
 ```json
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "phpcs.standard": "PSR2",
-  "phpcs.executablePath": "%APPDATA%\\Composer\\vendor\\bin\\phpcs",
+  "phpcs.executablePath": "C:\\Users\\lunodrade\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat",
   "editor.formatOnSave": true,
   "files.associations": {
     "blade": "html",
